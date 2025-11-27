@@ -1,0 +1,7 @@
+name: k8shardway
+description: AWS Go Pulumi project to create infrastructure for Kubernetes The Hard Way
+runtime: go
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-go
