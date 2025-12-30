@@ -4,6 +4,7 @@ go 1.24
 
 require (
 	github.com/pulumi/pulumi-aws/sdk/v7 v7.11.0
+	github.com/pulumi/pulumi-tls/sdk/v4 v4.11.1
 	github.com/pulumi/pulumi/sdk/v3 v3.208.0
 )
 
