@@ -25,6 +25,7 @@ func main() {
 		subnet, err := ec2.NewSubnet(ctx, "kubernetes-subnet", &ec2.SubnetArgs{
 			VpcId:               vpc.ID(),
 			CidrBlock:           pulumi.String("10.240.0.0/24"),
+			AvailabilityZone:    pulumi.String("us-east-1a"),
 			MapPublicIpOnLaunch: pulumi.Bool(true),
 			Tags: pulumi.StringMap{
 				"Name": pulumi.String("kubernetes"),
